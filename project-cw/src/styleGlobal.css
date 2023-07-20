@@ -13,6 +13,7 @@
     --cor-medium-gray: #595959;
     --cor-gray: #737373;
     --cor-white: #ffffff;
+    --cor-white-FB: #FBFBFB;
 }
 
 html,
@@ -24,5 +25,5 @@ body {
 .container{
     width: 75%;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }

@@ -8,3 +8,16 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.content-logo img{
+    width: 50px;
+    border-radius: 5px;
+}
+
+.content-button button{
+    padding: 40px;
+    border: none;
+    background-color: var(--cor-white);
+    color: var(--cor-dark-grey);
+    letter-spacing: 0.3px;
+}
