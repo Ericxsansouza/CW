@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+
+:root {
+    --cor-background: #0D0D0D;
+    --cor-dark-grey: #262626;
+    --cor-medium-gray: #595959;
+    --cor-gray: #737373;
+    --cor-white: #ffffff;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: var(--cor-background);
+}
+
+.container{
+    width: 75%;
+    margin: 0 auto;
+    border: 1px solid red;
+}
