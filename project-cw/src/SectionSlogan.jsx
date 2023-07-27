@@ -2,7 +2,7 @@ import React from 'react';
 import './SectionSlogan.css';
 import './styleGlobal.css';
 
-function SectionSlogan(){
+function SectionSlogan() {
     return (
         <div className='container'>
             <div className='section-slogan'>

@@ -10,7 +10,7 @@
 }
 
 .content-logo img{
-    width: 50px;
+    width: 100px;
     border-radius: 5px;
 }
 
@@ -20,4 +20,5 @@
     background-color: var(--cor-white);
     color: var(--cor-dark-grey);
     letter-spacing: 0.3px;
+    cursor: pointer;
 }

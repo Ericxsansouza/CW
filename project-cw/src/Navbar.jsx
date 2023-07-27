@@ -7,7 +7,7 @@ function Navbar() {
         <header className='container'>
             <div className='content'>
                 <div className='content-logo'>
-                    <img src='./public/C.png' />
+                    <img src='./public/007-Reversed-Square.svg' />
                 </div>
                 <div className='content-button'>
                     <button>ABRIR MINHA CONTA</button>
