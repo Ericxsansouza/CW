@@ -15,14 +15,15 @@
 }
 
 .image{
-    width: 100%;
+    width: 98%;
     height: auto;
 }
 
 .about-info{
     width: 50%;
     height: 100%;
-    padding: 10px 40px;
+    margin-left: 5rem;
+    margin-top: 2rem;
 }
 
 .about-info h2{
