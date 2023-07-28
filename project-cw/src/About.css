@@ -1,6 +1,7 @@
 @import url('./styleGlobal.css');
 
-.content-info{
+/* Estilos para telas maiores */
+.content-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,24 +10,24 @@
     cursor: default;
 }
 
-.about-image{
+.about-image {
     max-width: 50%;
     height: auto;
 }
 
-.image{
+.image {
     max-width: 100%;
     height: auto;
 }
 
-.about-info{
+.about-info {
     max-width: 50%;
     height: auto;
     margin-left: 5rem;
     margin-top: 2rem;
 }
 
-.about-info h2{
+.about-info h2 {
     color: var(--cor-white);
     font-weight: 400;
     font-size: 2.7em;
@@ -34,7 +35,7 @@
     line-height: 1.25;
 }
 
-.about-info p{
+.about-info p {
     color: var(--cor-white-FB);
     font-size: 1.125em;
     font-weight: 200;
@@ -43,7 +44,9 @@
     margin-top: 1.5rem;
 }
 
-.scrollReveal100, .scrollReveal200, .scrollReveal300{
+.scrollReveal100,
+.scrollReveal200,
+.scrollReveal300 {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -51,33 +54,23 @@
     margin-left: 1rem;
 }
 
-.scrollReveal100 h4{
+.scrollReveal100 h4,
+.scrollReveal200 h4,
+.scrollReveal300 h4 {
     color: var(--cor-white-FB);
     font-size: 1.5em;
     font-weight: 300;
     margin-left: 1rem;
 }
 
-.scrollReveal200 h4{
-    color: var(--cor-white);
-    font-size: 1.5em;
-    font-weight: 300;
-    margin-left: 1rem;
-}
-
-.scrollReveal300 h4{
-    color: var(--cor-white);
-    font-size: 1.5em;
-    font-weight: 300;
-    margin-left: 1rem;
-}
-
-.scrollReveal100, .scrollReveal200, .scrollReveal300 p{
+.scrollReveal100,
+.scrollReveal200,
+.scrollReveal300 p {
     font-size: 1.02em;
     color: var(--cor-white-FB);
 }
 
-.container-image{
+.container-image {
     background-color: var(--cor-dark-grey);
     display: flex;
     justify-content: center;
@@ -90,38 +83,68 @@
     transition: 0.2s;
 }
 
-.container-image:hover{
+.container-image:hover {
     max-width: 63px;
     height: 63px;
     border: 2px solid var(--cor-medium-gray);
 }
 
-.scrollReveal200 img{
-    width: 30px;    
+.scrollReveal200 img,
+.scrollReveal100 img,
+.scrollReveal300 img {
+    width: 30px;
     transition: 0.3s;
 }
 
-.scrollReveal200 img:hover{
-    width: 33px;    
-}
-
-.scrollReveal100 img{
-    width: 30px;
-    transition: 0.3s;  
-}
-
-.scrollReveal100 img:hover{
+.scrollReveal200 img:hover,
+.scrollReveal100 img:hover,
+.scrollReveal300 img:hover {
     width: 33px;
 }
 
-.scrollReveal300 img{
-    width: 30px;
-    transition: 0.3s;   
+/* Media Query para telas menores */
+@media screen and (max-width: 768px) {
+    .content-info {
+        flex-direction: column;
+        margin-top: 5rem; /* Reduzir a margem superior para melhor encaixar na tela */
+        height: auto; /* Remover altura fixa para que o conteúdo possa se expandir */
+    }
+
+    .about-image,
+    .about-info {
+        max-width: 100%; /* Ocupar toda a largura em telas menores */
+        margin-left: 0; /* Remover a margem esquerda em telas menores */
+    }
+
+    .about-info {
+        margin-top: 2rem; /* Ajustar a margem superior em telas menores */
+    }
+
+    .scrollReveal100,
+    .scrollReveal200,
+    .scrollReveal300 {
+        flex-direction: column; /* Alinhar os elementos verticalmente em telas menores */
+        margin-top: 2rem; /* Ajustar a margem superior em telas menores */
+        margin-left: 0; /* Remover a margem esquerda em telas menores */
+        align-items: center; /* Centralizar os elementos horizontalmente em telas menores */
+    }
+
+    .container-image {
+        margin-right: 0; /* Remover a margem direita em telas menores */
+        margin-bottom: 1rem; /* Adicionar espaço entre os elementos em telas menores */
+    }
+
+    .about-info h2 {
+        font-size: 2em; /* Reduzir o tamanho da fonte do título em telas menores */
+    }
+
+    .about-info p {
+        font-size: 1em; /* Reduzir o tamanho da fonte do parágrafo em telas menores */
+    }
+
+    .scrollReveal100 h4,
+    .scrollReveal200 h4,
+    .scrollReveal300 h4 {
+        font-size: 1.2em; /* Reduzir o tamanho da fonte dos títulos em telas menores */
+    }
 }
-
-.scrollReveal300 img:hover{
-    width: 33px;
-}
-
-
-
