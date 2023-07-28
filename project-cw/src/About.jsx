@@ -10,9 +10,11 @@ function About() {
                     <img src='./public/image.svg' className='image'></img>
                 </div>
                 <div className='about-info'>
-                    <h2>Abra sua conta gratuita.</h2>
-                    <p>Libere seu potencial financeiro e descubra um mundo de oportunidades com a nossa
-                        análise de crédito especializada.</p>
+                    <div className='scrollReveal50'>
+                        <h2>Abra sua conta gratuita.</h2>
+                        <p>Libere seu potencial financeiro e descubra um mundo de oportunidades com a nossa
+                            análise de crédito especializada.</p>
+                    </div>
                     <div className='scrollReveal100'>
                         <div className='container-image'>
                             <img src='./public/avanco-rapido2 (2).png'></img>
@@ -37,7 +39,7 @@ function About() {
                         </div>
                         <span>
                             <h4>Confidencialidade e segurança</h4>
-                            <p className='text'>Proteção dos seus dados pessoais e financeiros.</p>
+                            <p className='text'>Proteção dos seus dados pessoais.</p>
                         </span>
                     </div>
                 </div>

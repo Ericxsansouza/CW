@@ -1,6 +1,5 @@
 @import url('./styleGlobal.css');
 
-/* Estilos para telas maiores */
 .content-info {
     display: flex;
     justify-content: space-between;
@@ -12,7 +11,6 @@
 
 .about-image {
     max-width: 50%;
-    height: auto;
 }
 
 .image {
@@ -20,28 +18,29 @@
     height: auto;
 }
 
-.about-info {
-    max-width: 50%;
-    height: auto;
-    margin-left: 5rem;
-    margin-top: 2rem;
+.about-info{
+    margin: 60px;
+    max-height: 100vh;
 }
 
-.about-info h2 {
+.scrollReveal50{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.scrollReveal50 h2{
     color: var(--cor-white);
     font-weight: 400;
     font-size: 2.7em;
-    margin-left: 1rem;
     line-height: 1.25;
 }
 
-.about-info p {
+.scrollReveal50 p{
     color: var(--cor-white-FB);
     font-size: 1.125em;
     font-weight: 200;
     line-height: 1.5;
-    margin-left: 1rem;
-    margin-top: 1.5rem;
 }
 
 .scrollReveal100,
@@ -51,7 +50,7 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 5rem;
-    margin-left: 1rem;
+    gap: 1rem;
 }
 
 .scrollReveal100 h4,
@@ -60,7 +59,8 @@
     color: var(--cor-white-FB);
     font-size: 1.5em;
     font-weight: 300;
-    margin-left: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
 }
 
 .scrollReveal100,
@@ -68,6 +68,8 @@
 .scrollReveal300 p {
     font-size: 1.02em;
     color: var(--cor-white-FB);
+    font-weight: 200;
+    text-align: left;
 }
 
 .container-image {
@@ -79,7 +81,6 @@
     height: 60px;
     border-radius: 10px;
     padding: 30px;
-    margin-right: 1rem;
     transition: 0.2s;
 }
 
@@ -102,49 +103,3 @@
     width: 33px;
 }
 
-/* Media Query para telas menores */
-@media screen and (max-width: 768px) {
-    .content-info {
-        flex-direction: column;
-        margin-top: 5rem; /* Reduzir a margem superior para melhor encaixar na tela */
-        height: auto; /* Remover altura fixa para que o conteúdo possa se expandir */
-    }
-
-    .about-image,
-    .about-info {
-        max-width: 100%; /* Ocupar toda a largura em telas menores */
-        margin-left: 0; /* Remover a margem esquerda em telas menores */
-    }
-
-    .about-info {
-        margin-top: 2rem; /* Ajustar a margem superior em telas menores */
-    }
-
-    .scrollReveal100,
-    .scrollReveal200,
-    .scrollReveal300 {
-        flex-direction: column; /* Alinhar os elementos verticalmente em telas menores */
-        margin-top: 2rem; /* Ajustar a margem superior em telas menores */
-        margin-left: 0; /* Remover a margem esquerda em telas menores */
-        align-items: center; /* Centralizar os elementos horizontalmente em telas menores */
-    }
-
-    .container-image {
-        margin-right: 0; /* Remover a margem direita em telas menores */
-        margin-bottom: 1rem; /* Adicionar espaço entre os elementos em telas menores */
-    }
-
-    .about-info h2 {
-        font-size: 2em; /* Reduzir o tamanho da fonte do título em telas menores */
-    }
-
-    .about-info p {
-        font-size: 1em; /* Reduzir o tamanho da fonte do parágrafo em telas menores */
-    }
-
-    .scrollReveal100 h4,
-    .scrollReveal200 h4,
-    .scrollReveal300 h4 {
-        font-size: 1.2em; /* Reduzir o tamanho da fonte dos títulos em telas menores */
-    }
-}
