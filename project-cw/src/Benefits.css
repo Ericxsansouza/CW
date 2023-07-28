@@ -1,12 +1,13 @@
 @import url('./styleGlobal.css');
 
 .content-benefits{
+    margin-top: 12rem;
     width: 100%;
     height: 130px;
 }
 
 .content-benefits h6{
-    font-size: 20px;
+    font-size: 1.25em;
     -webkit-background-clip: text;
     background-image: linear-gradient(88.76deg,rgba(252, 230, 38, 1) -100%,rgba(243, 90, 155, 1) 100%);
     color: transparent!important;
@@ -17,7 +18,7 @@
 .text-benefits{
     color: var(--cor-white);
     font-weight: 400;
-    font-size: 37px;
+    font-size: 2.313em;
     line-height: 1.35;
 }
 
@@ -30,8 +31,8 @@
 }
 
 .content-benefits-card-one{
-    width: 100%;
-    height: 300px;
+    max-width: 100%;
+    max-height: 300px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.5rem;
@@ -39,18 +40,20 @@
 }
 
 .content-benefits-card-two{
-    width: 100%;
-    height: 300px;
+    max-width: 100%;
+    max-height: 300px;
     display: flex;
     justify-content: space-between;
 }
 
 .card-1, .card-2, .card-3, .card-4{
     background-color: var(--cor-dark-grey);
-    width: 49%;
+    max-width: 49%;
     border-radius: 8px;
     padding: 30px 30px;
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover{
@@ -65,14 +68,14 @@
 .card-1 h3, .card-2 h3, .card-3 h3, .card-4 h3{
     color: var(--cor-white);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25em;
     margin-bottom: 1rem;
 }
 
 .card-1 p, .card-2 p, .card-3 p, .card-4 p{
     color: var(--cor-white-FB);
     font-weight: 200;
-    font-size: 15px;
+    font-size: 0.938em;
     margin-bottom: 4rem;
 }
 
@@ -84,12 +87,12 @@
 .to-know a, .to-know a, .to-know a, .to-know a{
     color: rgb(236, 126, 57);
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875em;
     text-decoration: none;
 }
 
 .to-know img{
     margin-top: 4px;
-    width: 8px;
-    height: 8px;
+    max-width: 8px;
+    max-height: 8px;
 }
